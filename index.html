@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+	  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+	  <script src="extlib/js/jquery-1.10.2.min.js"></script>
+	  <script src="bootstrap/js/button.js"></script>
+	  <script src="bootstrap/js/carousel.js"></script>
+	  <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+	
+    <div class="container">
+
+		<div id="login-form">
+			<form class="form-signin">
+			<h2 class="form-signin-heading">Please sign in</h2>
+			<input type="text" class="form-control" id="irc-username" placeholder="username" value="TESTER" autofocus>
+			<input type="text" class="form-control" id="irc-server" placeholder="server" value="irc.esper.net">
+			<label class="checkbox">
+			  <input type="checkbox" value="remember-me"> Remember me
+			</label>
+			<button id="login" class="btn btn-lg btn-primary btn-block" data-loading-text="Signing In..."  type="submit">Sign in</button>
+			</form>
+		</div>
+
+		<div id="main-page">
+
+			<div id="main-board">
+				<ul id="tabs" class="nav nav-tabs">
+				</ul>
+
+				<div id="tabs-content" class="tab-content">
+			    </div>
+			</div>
+		</div>
+
+    </div> <!-- /container -->
+
+  </body>
+
+  <script src="js/tabs.js"></script>
+  <script src="js/funk-irc.js"></script>
+
+</html>
