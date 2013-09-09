@@ -25,13 +25,18 @@ function Tab( a_id, a_title )
 
 	this.addToBoard = function()
 	{
-		this.dom_tab = $('<li><a href="#' + this.id + '" data-toggle="tab">' + this.title + '</a></li>');
+		this.dom_tab = $('<li><a href="#' + this.id + '" data-toggle="tab">' + this.title + ' <span class="badge">42</span></a></li>');
 		$("#tabs").append( this.dom_tab );
 
 		this.dom_content = ('<div class="tab-pane fade" id="' + this.id + '"><ul class="tab-msgs"></ul></div>');
 		$("#tabs-content").append( this.dom_content );
 
 		g_tabs[a_id] = this;
+	}
+
+	this.onMakeActive = function()
+	{
+		// TODO: erase any box
 	}
 
 	this.appendMsg = function( a_msg )
