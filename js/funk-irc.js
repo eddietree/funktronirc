@@ -70,19 +70,3 @@ function handle_login()
 		g_funk_irc = FunkIrc( server,  username );
 	});
 }
-
-$(function() {
-    handle_login();
-
-    //$('#main-page').toggle(false);
-    $( "#tabs" ).tab();
-
-    // add console tab
-    g_console_tab = new Tab("console", "Console");
-    g_console_tab.addToBoard();
-    g_console_tab.makeActive();
-
-    //var test_test = new Tab("test_id", "title");
-   // test_test.addToBoard();
-  });
-
